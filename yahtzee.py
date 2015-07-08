@@ -1,4 +1,6 @@
 """
+Ryan McGill
+2015
 Planner for Yahtzee
 Simplifications:  only allow discard and roll, only score against upper level
 """
@@ -34,7 +36,7 @@ def gen_all_permutations(outcomes, length):
             for item in outcomes:
                 new_sequence = list(partial_sequence)
                 new_sequence.append(item)
-                new_sequence = sorted(new_sequence) #added 
+                new_sequence = sorted(new_sequence)
                 temp_set.add(tuple(new_sequence))
             answer_set = temp_set
     return answer_set
